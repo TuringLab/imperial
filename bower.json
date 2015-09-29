@@ -2,8 +2,7 @@
   "name": "turing-web",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "font-awesome": "~4.4.0"
+    "turing-style": "*"
   },
   "appPath": "app",
   "moduleName": "turingSplash",
