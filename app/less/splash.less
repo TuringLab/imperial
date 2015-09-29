@@ -1,0 +1,209 @@
+.splash-logo{
+  max-width: 320px;
+  float: right;
+  display: block;
+  margin-right: 0px;
+  padding-top: 30px;
+  content: url(../images/logo-blue-large.png)
+}
+
+.splash-logo:after {
+  max-width: 320px;
+  float: right;
+  display: block;
+  margin-right: 0px;
+  padding-top: 30px;
+  content: url(../images/logo-clear.png)
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#splash-saturday {
+  float: right;
+  margin-right: 22px;
+}
+
+#splash-saturday h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: -20px;
+}
+
+#splash-summary {
+  float: right;
+  margin-right: 20px;
+  & p {
+    text-align: right;
+    font-size: 16px;
+  }
+}
+
+.splash-sphere {
+    color: #2A78BD;
+    background-color: white;
+
+    border-radius: 50px;
+    //max-width: 550px;
+    //min-height: 550px;
+    //min-width: 100%;
+
+    margin: 0px auto 20px auto;
+}
+
+.splash-map{
+  width: 100%;
+  height: auto;
+}
+
+.splash-sphere h2 {
+  padding-top: 50px;
+}
+
+.splash-description {
+  padding: 10px 0px;
+}
+
+.sphere-image{
+  max-height: 120px;
+  padding: 10px;
+  margin: auto;
+}
+
+.content-upper {
+  padding: 0px 10px;
+  & p {
+    font-size: 14px;
+  }
+}
+
+.content-middle {
+  padding: 0px 30px;
+  & p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-middle {
+     padding: 0px 45px;
+  }
+}
+
+
+.content-lower {
+  padding: 0px 60px;
+  & p {
+    font-size: 14px;
+  }
+}
+
+.age-style {
+  font-size: 20px;
+}
+
+
+.splash-header {
+    // background-image: url(../images/header-bg.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: @white
+}
+
+@media (max-width:992px) {
+  .splash-header {
+    background-size: 120% auto;
+    // background-position-y: -20vw;
+    background-position: 0 -20vw;
+    background-color: @white;
+  }
+
+  .splash-heading {
+    margin-top: 50vw;
+  }
+  #splash-summary p {
+    color: @turingBlue;
+    text-align: center;
+  }
+  .splash-logo {
+    max-width: 80vw;
+    content: url(../images/logo-blue-large.png)!important;
+  }
+  .splash-logo:after {
+  max-width: 80vh;
+  content: url(../images/logo-blue.png)!important;
+}
+  #splash-logo-holder {
+  margin: 0 auto;
+  display: inline-block;
+}
+}
+
+
+@media (max-width:420px) {
+  .splash-header {
+    background-size: 120% auto;
+    // background-position-y: 0vw;
+    background-position: 0 0vw;
+    background-color: @white;
+  }
+  .splash-heading {
+    margin-top: 70vw;
+  }
+}
+
+.splash-header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px
+}
+
+
+.splash-header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    background-color: @turingBlue;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.9;
+
+}
+.splash-header .intro-text .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px
+}
+
+.btn-turing-splash {
+  .btn-mixin-basic(1px solid @turingBlue);
+  margin-top:10px;
+  margin-bottom:10px;
+  color:white;
+  background-color: @turingBlue;
+  &:hover {
+    border-color: @turingYellow;
+    & a {
+      color: @turingYellow;
+      text-decoration: none;
+    }
+  }
+}
+
+#bad-btn-margin {
+  margin-top: -150px;
+}
+
