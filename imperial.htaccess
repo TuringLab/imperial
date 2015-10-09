@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^code.doc.ic.ac.uk
+RewriteRule ^(.*) http://turinglab.gitub.io/imperial/$1 [P]
