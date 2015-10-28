@@ -1,9 +1,81 @@
 .lab-times {
 	background-color: @turingYellow;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .lab-time {
 	background-color: white;
-  border-radius: 10px;
+  // border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px;
+  color: @turingPink;
 }
+
+.lab-heading {
+  //border-radius: 10px;
+  //padding: 10px 20px;
+  margin: 0px 0px 0px 0px;
+  color: white
+
+
+}
+
+.lab-heading h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.apply-box(@color) {
+  border-color: @color;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px;
+  color: @color;
+  margin: 10px;
+
+  & h3 {
+    margin: 10px 0px 0px 0px
+  }
+
+  & p {
+    color: @color;
+    margin-bottom: 0px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  .apply {
+    border-radius: 10px;
+    background-color: @color;
+    color: white;
+    padding: 25px;
+  }
+
+  .apply h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+
+.outreach-box {
+  .apply-box(@turingBlue)
+}
+
+.girls-box {
+  .apply-box(@turingPink)
+}
+
+.lab-pad {
+  padding-top: 100px;
+}
+
+
+
+// .lab-heading h2{
+// 	margin-top: 10px;
+// 	margin-bottom: 0px;
+// }
